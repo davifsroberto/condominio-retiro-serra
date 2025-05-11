@@ -5,7 +5,19 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "test": "jest --passWithNoTests --silent --runInBand",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "npx playwright test",
+    "test:e2e:ui": "npm run test:e2e -- --ui",
+    "lint": "ng lint",
+    "lint:fix": "npm run lint -- --fix",
+    "pretty:fix": "prettier --config ./.prettierrc --write \"./**/*.{json,html,scss}\"",
+    "pretty:check": "prettier --config ./.prettierrc --check \"./**/*.{json,html,scss}\"",
+    "translate": "node src/build-translations.js",
+    "prepare": "husky",
+    "postinstall": "playwright install"
   },
   "private": true,
   "dependencies": {
@@ -22,18 +34,22 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.2.11",
+    "@angular-eslint/builder": "19.3.0",
+    "@angular-eslint/eslint-plugin": "19.3.0",
+    "@angular-eslint/eslint-plugin-template": "19.3.0",
+    "@angular-eslint/schematics": "19.3.0",
+    "@angular-eslint/template-parser": "19.3.0",
     "@angular/cli": "^19.2.11",
     "@angular/compiler-cli": "^19.2.0",
-    "typescript": "~5.7.2",
-
     "@playwright/test": "^1.52.0",
     "@testing-library/angular": "^17.3.7",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.7.9",
-    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/eslint-plugin": "7.11.0",
+    "@typescript-eslint/parser": "7.11.0",
     "angular-eslint": "19.3.0",
     "es-module-shims": "^1.5.12",
-    "eslint": "^8.57.1",
+    "eslint": "8.57.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-import-resolver-typescript": "^4.3.4",
     "eslint-plugin-import": "^2.31.0",
@@ -44,6 +60,7 @@
     "jest-preset-angular": "^14.5.5",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
+    "typescript": "5.4.5",
     "typescript-eslint": "8.27.0"
   }
 }
