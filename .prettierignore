@@ -9,4 +9,3 @@ documentation
 dist
 helm
 Dockerfile
-tsconfig.federation.json
