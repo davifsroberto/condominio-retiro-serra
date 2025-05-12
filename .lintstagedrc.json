@@ -1,4 +1,0 @@
-{
-  "*.ts": "npx eslint --fix",
-  "*.{json,html,scss}": "npx prettier --config ./.prettierrc --write"
-}

@@ -1,3 +1,0 @@
-# CondominioRetiroSerra
-
-TODO: Fazer Readme
