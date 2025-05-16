@@ -1,0 +1,20 @@
+{
+  "name": "condominio-retiro-serra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretty:fix": "prettier --config ./.prettierrc --write \"./**/*.{json,html,scss}\"",
+    "pretty:check": "prettier --config ./.prettierrc --check \"./**/*.{json,html,scss}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-pessoal:davifsroberto/condominio-retiro-serra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
