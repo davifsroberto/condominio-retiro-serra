@@ -1025,6 +1025,10 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about-second-section {
+  background: var(--accent-color);
+}
+
 .about .section-title {
   margin-bottom: 60px;
 }
